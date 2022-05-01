@@ -1,0 +1,24 @@
+lecture_index:
+  path: /lecture
+  controller: App\Controller\LectureController::index
+  methods: GET
+
+lecture_get:
+  path: /lecture/{id}
+  controller: App\Controller\LectureController::getOne
+  methods: GET
+
+lecture_create:
+  path: /lecture
+  controller: App\Controller\LectureController::create
+  methods: POST
+
+lecture_update:
+  path: /lecture/{id}
+  controller: App\Controller\LectureController::update
+  methods: PUT
+
+lecture_delete:
+  path: /lecture/{id}/delete
+  controller: App\Controller\LectureController::delete
+  methods: DELETE
